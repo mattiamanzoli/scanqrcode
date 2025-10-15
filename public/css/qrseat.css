@@ -1,0 +1,112 @@
+.qrseat-card{
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    background: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.qrseat-row{
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.qrseat-row label{
+    font-weight: 600;
+}
+.qrseat-row input{
+    flex: 1 1 auto;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 150px;
+}
+.qrseat-btn{
+    padding: 8px 12px;
+    cursor: pointer;
+    border: 1px solid #0073aa;
+    background: #0085ba;
+    color: #fff;
+    border-radius: 6px;
+    transition: background .3s;
+    font-weight: 500;
+}
+.qrseat-btn:hover{
+    background: #0073aa;
+}
+.qrseat-error{
+    color: #c62828;
+    margin-top: 10px;
+    padding: 8px;
+    background: #ffebee;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.qrseat-success{
+    color: #2e7d32;
+    margin-top: 10px;
+    padding: 8px;
+    background: #e8f5e9;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.qrseat-note, .qrseat-row.small{
+    font-size: .9em;
+    color: #555;
+    margin-top: 8px;
+}
+qrcode-stream{
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#qrseat-pairing-qr{
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+#qrseat-pairing-qr #qrseat-qrcode-target{
+    display: inline-block; /* Contiene il QR code */
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+#qrseat-pairing-qr img, #qrseat-pairing-qr canvas{
+    display: block;
+}
+#qrseat-log{
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    font-size: 0.85em;
+    color: #333;
+    max-height: 150px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-family: monospace;
+    background: #fcfcfc;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+.qrseat-copy-btn {
+    padding: 5px 8px;
+    margin-left: 5px;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background .1s;
+}
+.qrseat-copy-btn:hover {
+    background: #ddd;
+}
